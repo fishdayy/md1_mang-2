@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<input type="text" id="dictionary" name="dictionary">
+<button id="search" onclick="search()">tìm kiếm</button>
+<p id="result"></p>
+</body>
+</html>
+<script>
+    function search(){
+        let text = document.getElementById('dictionary').value;
+        let english = ["hello", "apple", "dog", "cat", "fish"];
+        let vietnamese = ["xin chào", "quả táo", "con chó", "con mèo", "con cá"];
+        let index_eng = 0;
+        let result = "";
+        for ( let i = 0; i < english.length; i++){
+            if (text == english[i]){
+                index_eng = i;
+                for (let j = 0; j < vietnamese.length; j++){
+                    if (index_eng == j){
+                        result = vietnamese[j];
+                    }
+                }
+            }
+        }
+        document.getElementById('result').innerHTML = result;
+    }
+</script>
