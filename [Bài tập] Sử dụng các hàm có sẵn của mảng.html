@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // bài 1:
+    // myColor = ["Red", "Green", "White", "Black"];
+    // console.log(myColor.join());
+
+    //bài 2:
+    // let num = prompt('nhập n: ')
+    // let str = num.toString();
+    // let result = [str[0]];
+    // for (let x = 1;x <str.length; x++){
+    //     if ((str[x-1]%2 === 0)&&(str[x]%2 === 0)){
+    //         result.push('-', str[x]);
+    //     }else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // document.write(result.join(''));
+
+    //bài 3:
+    let arr = prompt("nhập chuỗi: ");
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+    for(var x=0; x<arr.length; x++){
+        if (UPPER.indexOf(arr[x]) !== -1){
+            result.push(arr[x].toLowerCase());
+        }else if (LOWER.indexOf(arr[x]) !== -1){
+            result.push(arr[x].toUpperCase());
+        }else {
+            result.push(arr[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
