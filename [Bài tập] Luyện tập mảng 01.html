@@ -30,27 +30,27 @@
     // document.write('So lon nhat la : ' + max + ' tai vi tri la : ' + index)
 
     //bai 3
-    // let arr = []
-    // let i = 0;
-    // while (true){
-    //     if (arr[i] == '.'){
-    //         break
-    //     }else {
-    //         arr[i] = +prompt('Nhap phan tu: ' + i);
-    //     }
-    //     i++
-    // }
-    // document.write(arr + '<br>');
-    // let max = arr[0];
-    // let tong = 0;
-    // for (let i = 0; i < arr.length; i++){
-    //     tong += arr[i];
-    //     if (max < arr[i]){
-    //         max = arr[i]
-    //     }
-    // }
-    // document.write('max la: ' + max +'<br>');
-    // document.write('gia tri trung binh bang: ' +tong/arr.length);
+    let arr = [];
+    let i = 0;
+    while (true){
+        arr[i] = +prompt('nhap mang ky tu: '+ i)
+        if (arr[i] == '-1'){
+            arr.pop();
+            break
+        }
+        i++
+    }
+    document.write(arr + '<br>');
+    let max = arr[0];
+    let tong = 0;
+    for (let i = 0; i < arr.length; i++){
+        tong += arr[i];
+        if (max < arr[i]){
+            max = arr[i]
+        }
+    }
+    document.write('max la: ' + max +'<br>');
+    document.write('gia tri trung binh bang: ' +tong/arr.length);
 
     //bai 4
     // let arr = []
@@ -116,18 +116,18 @@
     // document.write(sorted);
 
     //bai 9
-    alert('Nhap 10 so nguyen cua mang 1 :');
-    let arr = [];
-    for (let i = 0; i < 10; i++) {
-        arr[i] = prompt('So thu ' + (i + 1));
-    }
-    document.write(arr+'<br>');
-    alert('Nhap 10 so nguyen cua mang 2 :');
-    let arr2 = [];
-    for (let j = 0; j < 10; j++) {
-        arr2[j] = prompt('So thu ' + (j + 1));
-    }
-    document.write(arr2+'<br>');
-    let c = arr2.concat(arr);
-    document.write('mang c nối từ hai mảng b và a: ' + c)
+    // alert('Nhap 10 so nguyen cua mang 1 :');
+    // let arr = [];
+    // for (let i = 0; i < 10; i++) {
+    //     arr[i] = prompt('So thu ' + (i + 1));
+    // }
+    // document.write(arr+'<br>');
+    // alert('Nhap 10 so nguyen cua mang 2 :');
+    // let arr2 = [];
+    // for (let j = 0; j < 10; j++) {
+    //     arr2[j] = prompt('So thu ' + (j + 1));
+    // }
+    // document.write(arr2+'<br>');
+    // let c = arr2.concat(arr);
+    // document.write('mang c nối từ hai mảng b và a: ' + c)
 </script>
